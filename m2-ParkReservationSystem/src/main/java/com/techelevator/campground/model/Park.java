@@ -57,14 +57,7 @@ public class Park {
 	}
 	
 	public static int getParkInformation(String choice, Object[] parkNames, List<Park> parks) {
-		/*
-		 * this method is looping through the parkNames array and searching the actual
-		 * parks list looking for a match in name and once a match is found, printing
-		 * all the park information.
-		 * 
-		 * this method is also returning the park id to pass to the campground method
-		 * for searching all the campgrounds within the selected park
-		 */
+
 
 		int parkId = 0;
 		for (int i = 0; i < parkNames.length; i++) {

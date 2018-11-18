@@ -8,6 +8,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.techelevator.model.Inventory;
+import com.techelevator.model.Logger;
+import com.techelevator.model.ProductFileReader;
+import com.techelevator.model.Purchase;
+
 public class ItemTest {
 
 	Purchase purchase;

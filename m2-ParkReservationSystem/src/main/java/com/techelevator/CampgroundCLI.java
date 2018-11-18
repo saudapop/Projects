@@ -145,29 +145,25 @@ public class CampgroundCLI {
 
 	private int handleParks() {
 		printHeading("Select a Park for Futher Details");
-		parks = parkDAO.getAllParks(); // list of parks
-		parkNames = new Object[parks.size()]; // list of park names using size of parks list to create size of array
-
+		parks = parkDAO.getAllParks(); 
+		parkNames = new Object[parks.size()]; 
 		getParkNames();
-		String parkChoice = (String) menu.getChoiceFromOptions(parkNames); // prints the list of parks to the user and prompts a park choice
-		
-		int parkId = Park.getParkInformation(parkChoice, parkNames, parks); // uses the choice and prints the park info and gets the parkID.
-
+		String parkChoice = (String) menu.getChoiceFromOptions(parkNames); 
+		int parkId = Park.getParkInformation(parkChoice, parkNames, parks); 
 		return parkId;
 	}
 
 	private void getParkNames() {
-		for (int i = 0; i < parkNames.length; i++) { // loop through the list of parks and assign the name to the empty objects
-			parkNames[i] = parks.get(i).getName(); // of the parkNames array based on index
+		for (int i = 0; i < parkNames.length; i++) { 
+			parkNames[i] = parks.get(i).getName(); 
 		}
 	}
 
 
 
 	private void handleCampgrounds(int parkId) {
-		printHeading(parks.get(parkId - 1).getName() + " Park Campgrounds"); // get parks name and concatenate title
-		
-		campgrounds = campgroundDAO.getAllCampgrounds(parkId); // list of campgrounds
+		printHeading(parks.get(parkId - 1).getName() + " Park Campgrounds"); 
+		campgrounds = campgroundDAO.getAllCampgrounds(parkId); 
 		Campground.getCampgroundInformation(campgrounds);
 	}
 
@@ -192,10 +188,7 @@ public class CampgroundCLI {
 
 	}
 	
-	/*
-	 * start site extracted methods
-	 */
-	
+
 	private void showAvailableSitesToUser(int campgroundOptionNumber, LocalDate arrivalDate, LocalDate departureDate) {
 		int siteOptionCounter = 1;
 		sites = getSitesFromCampground(campgroundOptionNumber, arrivalDate, departureDate);
@@ -218,15 +211,11 @@ public class CampgroundCLI {
 		System.out.println(
 				"--------------------------------------------------------------------------------------------------------------------------------------------");
 	}
-	/*
-	 * end site extracted methods
-	 */
+
 	
 	private void handleBookReservation(LocalDate arrivalDate, LocalDate departureDate) {
 		
 		System.out.println("Which site should be reserved?(Enter 0 to cancel) ::::");
-		
-	
 		siteOptionFromUser = menu.getSiteOptionFromUser(sites);
 		
 		

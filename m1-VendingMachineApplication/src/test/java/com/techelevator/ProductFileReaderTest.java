@@ -9,6 +9,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.techelevator.model.ProductFileReader;
+
 public class ProductFileReaderTest {
 
 	ProductFileReader reader  = new ProductFileReader();

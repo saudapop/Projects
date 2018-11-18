@@ -13,6 +13,12 @@ import java.util.Scanner;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.internal.util.reflection.FieldReader;
+
+import com.techelevator.model.Inventory;
+import com.techelevator.model.Logger;
+import com.techelevator.model.ProductFileReader;
+import com.techelevator.model.Purchase;
+
 import org.junit.Assert;
 
 public class LoggerTest {

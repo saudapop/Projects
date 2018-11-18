@@ -11,10 +11,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import com.techelevator.Inventory;
-import com.techelevator.Item;
-import com.techelevator.ProductFileReader;
-import com.techelevator.Purchase;
+import com.techelevator.model.Inventory;
+import com.techelevator.model.Item;
+import com.techelevator.model.ProductFileReader;
+import com.techelevator.model.Purchase;
 
 public class Menu {
 
@@ -65,10 +65,6 @@ public class Menu {
 		out.flush();
 	}
 
-	/*
-	 * call the Read method of ProductFileReader Get the List<String> Display the
-	 * Product List
-	 */
 	List<String> productList;
 
 	public void DisplayProductMenu() throws IOException {

@@ -65,7 +65,7 @@ public class Menu {
 		int campgroundId = -1;
 		do  {
 			try {
-				campgroundId = Integer.parseInt(in.nextLine()); // why doesn't nextInt() work?
+				campgroundId = Integer.parseInt(in.nextLine()); 
 				if (isCampgroundIdInvalid(campgrounds, campgroundId)) {
 					showInvalidCampgroundMessage(campgroundId);
 					campgroundId = -1;

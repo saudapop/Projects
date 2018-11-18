@@ -10,6 +10,10 @@ import java.util.regex.Pattern;
 
 import org.junit.*;
 
+import com.techelevator.model.Inventory;
+import com.techelevator.model.Purchase;
+import com.techelevator.model.Item;
+import com.techelevator.model.ProductFileReader;
 import com.techelevator.view.Menu;
 
 public class InventoryTest {
