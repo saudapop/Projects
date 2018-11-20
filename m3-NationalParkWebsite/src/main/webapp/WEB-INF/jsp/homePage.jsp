@@ -8,7 +8,7 @@
 	<div class ="parkdetails">
 		<div class="parkimages">
 			<a href="parkDetail?parkCode=${park.parkCode }">
-			<img class="click frame" src="${pictureUrl }" style="border-radius:20px;"/></a>
+			<img class="click frame" src="${pictureUrl }" style="border-radius:20px; width:50vw"/></a>
 		</div>
 		<div class="parkInfo">
 			<ul>
